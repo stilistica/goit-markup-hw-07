@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    /* team */
+    .section-team {
+        padding-bottom: 104px;
+    }
+    .team {
+        gap: 0;
+    }
+    .li-team:nth-child(-n + 2) {
+        margin-bottom: 64px;
+    }
+    .li-team:nth-child(odd) {
+        margin-right: 24px;
+    }
+
+    /* Customers */
+    .customers-li {
+        width: calc((100% - 120px) /3);
+    }
+    .customers-li:nth-child(odd) {
+        margin-right: 0px;
+    }
+    .customers-li {
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+}

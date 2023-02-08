@@ -51,7 +51,7 @@ img {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1158px;
+    /* width: 1158px; */
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 2px solid tomato; */
@@ -558,11 +558,10 @@ textarea {
     margin-left: 24px;
 }
 
-
 /* team */
 .section-team {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 128px;
     background-color: var(--fdwhite);
 }
 .section-team h2 {
@@ -571,6 +570,9 @@ textarea {
 }
 .team {
     display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    justify-content: center;
 }
 
 .team-name .title {
@@ -589,11 +591,11 @@ textarea {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
-.li-team:not(:last-child),
-.team-li-icon:not(:last-child),
-.customers-li:not(:last-child) {
+
+.team-li-icon:not(:last-child) {
     margin-right: 24px;
 }
+
 .team-name {
     padding-top: 32px; 
     padding-bottom: 32px; 
@@ -628,20 +630,32 @@ textarea {
     background-color: var(--hero-button);
 }
 
+
+
+
+
+
+
+
+
 /* Customers */
 .customers {
-    padding-bottom: 120px;
+    padding-bottom: 96px;
+    padding-top: 96px;
 }
 .customers-title {
     margin: 0;
 }
 .customers-ul {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 16px;
+    justify-content: center;
     margin-top: 72px;
 }
 .customers-li {
-    width: calc((100% - 120px) /6);
-
+    width: calc((100% - 32px) /2);
 }
 .customers-a {
     display: flex;

@@ -1,0 +1,36 @@
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+    }
+
+    /* team */
+    .section-team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .li-team:nth-child(-n + 2) {
+        margin-bottom: 0;
+    }
+    .li-team:nth-child(odd) {
+        margin-right: 0;
+    }
+    .li-team:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    /* Customers */
+    .customers {
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+    .customers-ul {
+        row-gap: 0;
+        column-gap: 0;
+    }
+    .customers-li {
+        width: calc((100% - 120px) /6);
+    }
+    .customers-li:not(:last-child) {
+    margin-right: 24px;
+    }
+}
