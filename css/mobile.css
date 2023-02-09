@@ -2,4 +2,14 @@
     .container {
         width: 428px;
     }
+    .modal {
+        width: 392px;
+    }
+    .form-field-bd input {
+    width: 360px;
+    }
+    .menu-tel a {
+        font-size: 36px;
+        width: 337px;
+    }
 }

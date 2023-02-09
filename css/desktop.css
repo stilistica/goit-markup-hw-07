@@ -1,7 +1,115 @@
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
     }
+        /* header */
+    .header-div {
+        justify-content: end;
+        align-items: center;
+    }
+    .site-nav {
+        display: flex;
+        margin-right: auto;
+        margin-left: 46px;
+    }
+    .info-nav{
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+    }
+    .info-nav .item + .item {
+    margin-left: 40px;
+    }
+    .info-nav .adress {
+        font-size: 16px;
+        line-height: 1.5; 
+        }
+/* backdrop */
+    .modal {
+        padding: 72px 24px 24px;
+    }
+/* hero */
+    .hero {
+        height: 600px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        background-image: linear-gradient( 
+            to right,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../img/hero.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient( 
+            to right,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../img/hero-2x.jpg);
+    }
+}
+    .hero-title {
+        margin-bottom: 48px;
+    }
+/* skills */
+.sect-skills {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.feature {
+    row-gap: 0;
+    column-gap: 0;
+}
+.li-feature {
+    width: 264px;
+}
+.li-feature + .li-feature {
+    margin-left: 24px;
+}
+.sk-d-ic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+
+    background: var(--fdwhite);
+
+    border-radius: 4px;
+}
+.feature .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* what are we doing */
+.select-wad {
+    display: block;
+    padding-bottom: 120px;
+}
+
+.capitalize {
+    margin-top: 0;
+    margin-bottom: 72px;
+
+    text-transform:capitalize;
+}
+.doing {
+    display: flex;
+    margin-top: 0;
+}
+
+.li-doing + .li-doing {
+    margin-left: 24px;
+}
 
     /* team */
     .section-team {
@@ -32,5 +140,17 @@
     }
     .customers-li:not(:last-child) {
     margin-right: 24px;
+    }
+    /* footer */
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .d-footer {
+        margin-bottom: 0;
+        margin-right: 120px;
+    }
+    .foot-d-three {
+        margin-left: auto;
     }
 }
