@@ -14,17 +14,17 @@
 </head>
 <body>
     <header>
-        <div class="container header-div">
+        <div class="header-div container">
             <nav class="header-div">
                 <a href="./index.html" class="logo"><span class="logo-web">WEB</span>STUDIO</a>
                 <ul class="site-nav list">
-                    <li class="item">
-                        <a href="./index.html" class="link">Studio
+                    <li class="item current-li">
+                        <a href="./index.html" class="link current">Studio
                             <div></div> 
                         </a>
                     </li>
-                    <li class="item current-li">
-                        <a href="./portfolio.html" class="link current">Portfolio
+                    <li class="item">
+                        <a href="./portfolio.html" class="link">Portfolio
                             <div></div>
                         </a>
                     </li>
@@ -36,9 +36,61 @@
                 </ul>
             </nav>
             <ul class="info-nav list">
-                <li class="item"><a href="meilto:info@devstudio.com" class="adress">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+110001111111" class="adress">+11 (000) 111-11-11</a></li>
+                <li class="li-inf item"><a href="meilto:info@devstudio.com" class="adress">info@devstudio.com</a></li>
+                <li class="li-inf item"><a href="tel:+110001111111" class="adress">+11 (000) 111-11-11</a></li>
             </ul>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./img/symbol-defs.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <button type="button" class="menu-close" data-menu-close>
+                <svg width="8px" height="8px"><use href="./img/symbol-defs.svg#icon-close"></use></svg>
+            </button>
+            <ul class="mob-menu-ul list">
+                <li class="mob-menu-li item">
+                    <a href="./index.html" class="link current">Studio
+                    </a>
+                </li>
+                <li class="mob-menu-li item">
+                    <a href="./portfolio.html" class="link">Portfolio
+                    </a>
+                </li>
+                <li class="mob-menu-li menu-nav item">
+                    <a href="" class="link">Contacts
+                    </a>
+                </li>
+            </ul>
+            <div>
+                <ul class="list">
+                    <li class="menu-tel item"><a href="tel:+110001111111" class="adress">+11 (000) 111-11-11</a></li>
+                    <li class="menu-meil item"><a href="meilto:info@devstudio.com" class="adress">info@devstudio.com</a></li>
+                </ul>
+                <ul class="list menu-networks">
+                    <li class="menu-li-icon"> 
+                        <a class="menu-a-icon" href="">
+                            <svg width="24px" height="24px"><use href="./img/symbol-defs.svg#icon-instagram"></use></svg>
+                        </a>
+                    </li>
+                    <li class="menu-li-icon">
+                        <a class="menu-a-icon" href="">
+                            <svg width="24px" height="24px"><use href="./img/symbol-defs.svg#icon-twitter"></use></svg>
+                        </a>
+                    </li>
+                    <li class="menu-li-icon">
+                        <a class="menu-a-icon" href="">
+                            <svg width="24px" height="24px"><use href="./img/symbol-defs.svg#icon-facebook"></use></svg>
+                        </a>
+                    </li>
+                    <li class="menu-li-icon">
+                        <a class="menu-a-icon" href="">
+                            <svg width="24px" height="24px"><use href="./img/symbol-defs.svg#icon-linkedin"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -208,4 +260,5 @@
         </div>
     </footer>
 </body>
+<script src="./js/menu.js"></script>
 </html>

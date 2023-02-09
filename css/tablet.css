@@ -192,4 +192,33 @@
     width: 264px;
     margin-bottom: 0;
 }
+/* portfolio */
+.page {
+    padding-top: 64px;
+    padding-bottom: 96px;
+}
+.port-but {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    row-gap: 0;
+    column-gap: 0;
+}
+.li-port-but + .li-port-but {
+    margin-left: 24px;
+}
+.photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.photo-style {
+    width: calc((100% - 48px) / 2) ;
+    margin-bottom: 72px;
+    margin-left: 0;
+}
+.photo-style:nth-child(odd) {
+    margin-right: 24px;
+}
 }
