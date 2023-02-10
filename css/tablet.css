@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     .container {
-        min-width: 768px;
+        width: 768px;
         
     }
     /* header */
@@ -163,15 +163,18 @@
 
     /* Customers */
     .customers-li {
-        width: calc((100% - 120px) /3);
+        width: calc((100% - 48px) /3);
+        row-gap: 72px;
+        column-gap: 24px;
     }
     .customers-li:nth-child(odd) {
         margin-right: 0px;
     }
-    .customers-li {
-        row-gap: 72px;
-        column-gap: 24px;
+    .customers-ul {
+        padding-left: 108px;
+        padding-right: 108px;
     }
+    
 
 /* footer */
 .foot-div {
@@ -192,10 +195,16 @@
     width: 264px;
     margin-bottom: 0;
 }
+.form-f button {
+    margin-left: 24px;
+}
 /* portfolio */
 .page {
     padding-top: 64px;
     padding-bottom: 96px;
+}
+.p-button {
+    padding: 12px 24px;
 }
 .port-but {
     display: flex;
@@ -211,7 +220,7 @@
 .photo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
 }
 .photo-style {
     width: calc((100% - 48px) / 2) ;

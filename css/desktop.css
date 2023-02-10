@@ -9,12 +9,11 @@
         /* header */
     .header-div {
         justify-content: end;
-        align-items: center;
     }
     .site-nav {
         display: flex;
         margin-right: auto;
-        margin-left: 46px;
+        margin-left: 76px;
     }
     .info-nav{
         display: flex;
@@ -134,6 +133,9 @@
     .customers-ul {
         row-gap: 0;
         column-gap: 0;
+        padding-left: 0;
+        padding-right: 0;
+
     }
     .customers-li {
         width: calc((100% - 120px) /6);
@@ -164,6 +166,9 @@
     .photo-style {
     width: calc((100% - 48px) / 3) ;
     margin-right: 24px;
+}
+.port-animat p {
+    transform: translateY(100%);
 }
 .photo-style:nth-child(3n) {
     margin-right: 0;
