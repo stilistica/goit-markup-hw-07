@@ -183,6 +183,7 @@
     margin-right: auto;
 }
 .foot-div {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
